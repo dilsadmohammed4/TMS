@@ -1,9 +1,46 @@
-
 <%- include('partials/sidebar') -%>
-<section class="home-section">
-    <nav>
-        <span class="dashboard">Todolist</span>
-    </nav>
-</section>
+    <section class="home-section">
+        <nav>
+            <span class="dashboard">Todolist</span>
+            <button type="button" class="btn todo-add btn-primary">Add</button>
+        </nav>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Deadline</th>
+                    <th>Complete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Write Journal</td>
+                    <td>10-8-2021</td>
+                    <td>20-9-2021</td>
+                    <td>&#10004</td>
+                    <td><button type="button" class="btn btn-danger">Delete</button>
+                    </td>
 
-<%- include('partials/footer') -%>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>14-8-2021</td>
+                    <td>09-9-2021</td>
+                    <td>&#10006</td>
+                    <td><button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>19-8-2021</td>
+                    <td>23-12-2021</td>
+                    <td>&#10004</td>
+                    <td><button type="button" class="btn  btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <%- include('partials/footer') -%>
